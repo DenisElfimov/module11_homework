@@ -1,5 +1,5 @@
 function isPrime(num) {
-  if (!Number.isFinite(num) || num < 2 || num > 1000) {
+  if (!Number.isFinite(num) || !Number.isInteger(num) || num < 2 || num > 1000) {
     console.log('Ожидается число от 2 до 1000');
     return false;
   }
